@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-29T16:23:18.666055" rpa="false" schemaversion="5">
+<suite id="s1" name="Reactform" source="d:\ReactFormformic\robot-reacform\reactform.robot">
+<test id="s1-t1" name="Check validation FirastName" line="21">
+<kw name="Open Google ReactForm">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:18.780311" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5174/'.</msg>
+<arg>http://localhost:5174/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-29T16:23:18.780311" elapsed="1.405438"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-29T16:23:20.185749" elapsed="0.121629"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:18.779372" elapsed="1.528006"/>
+</kw>
+<kw name="Input FirastName">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:20.309376" level="INFO">Typing text '545454' into text field 'name=firstnameEng'.</msg>
+<arg>name=firstnameEng</arg>
+<arg>${INPUT_FirstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-29T16:23:20.309376" elapsed="0.103986"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:20.308375" elapsed="0.104987"/>
+</kw>
+<kw name="Click Element Field">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:20.413362" level="INFO">Clicking button 'name=lastnameTha'.</msg>
+<arg>name=lastnameTha</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-29T16:23:20.413362" elapsed="0.034861"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:20.413362" elapsed="0.034861"/>
+</kw>
+<kw name="Verify FirstName">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${RESULT_FirstName}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-29T16:23:20.448223" elapsed="0.018260"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:20.475402" level="INFO">Current page contains text 'Must be in English only'.</msg>
+<arg>${RESULT_FirstName}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-29T16:23:20.466483" elapsed="0.008919"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:20.448223" elapsed="0.027179"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-29T16:23:20.476405" elapsed="2.093143"/>
+</kw>
+<doc>Test First</doc>
+<status status="PASS" start="2024-03-29T16:23:18.778305" elapsed="3.791243"/>
+</test>
+<test id="s1-t2" name="Check validation IDCard" line="29">
+<kw name="Open Google ReactForm">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:22.573559" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5174/'.</msg>
+<arg>http://localhost:5174/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-29T16:23:22.573559" elapsed="1.389284"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-29T16:23:23.962843" elapsed="0.108493"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:22.573559" elapsed="1.498780"/>
+</kw>
+<kw name="Input IDCard">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:24.076341" level="INFO">Typing text '000000000000' into text field 'name=idCard'.</msg>
+<arg>name=idCard</arg>
+<arg>${INPUT_IDCARD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-29T16:23:24.075338" elapsed="0.149192"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:24.074339" elapsed="0.150191"/>
+</kw>
+<kw name="Click Element Field">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:24.225530" level="INFO">Clicking button 'name=lastnameTha'.</msg>
+<arg>name=lastnameTha</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-29T16:23:24.225530" elapsed="0.042353"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:24.225530" elapsed="0.042353"/>
+</kw>
+<kw name="Verify IDCard">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${RESULT_IDCARD}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-29T16:23:24.267883" elapsed="0.012238"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:24.286121" level="INFO">Current page contains text 'ใส่ให้ครบ 13 หลักสิ'.</msg>
+<arg>${RESULT_IDCARD}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-29T16:23:24.280121" elapsed="0.006000"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:24.267883" elapsed="0.019238"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-29T16:23:24.287121" elapsed="2.099815"/>
+</kw>
+<doc>Test IDCard</doc>
+<status status="PASS" start="2024-03-29T16:23:22.572555" elapsed="3.814381"/>
+</test>
+<test id="s1-t3" name="Check validation Password" line="37">
+<kw name="Open Google ReactForm">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:26.386936" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5174/'.</msg>
+<arg>http://localhost:5174/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-29T16:23:26.386936" elapsed="1.318635"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-29T16:23:27.705571" elapsed="0.116195"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:26.386936" elapsed="1.434830"/>
+</kw>
+<kw name="Input Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:27.821766" level="INFO">Typing text '1111111' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${INPUT_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-29T16:23:27.821766" elapsed="0.107929"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:27.821766" elapsed="0.107929"/>
+</kw>
+<kw name="Click Element Field">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:27.929695" level="INFO">Clicking button 'name=lastnameTha'.</msg>
+<arg>name=lastnameTha</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-29T16:23:27.929695" elapsed="0.035225"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:27.929695" elapsed="0.035225"/>
+</kw>
+<kw name="Verify Password">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${RESULT_PASSWORD}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-29T16:23:27.964920" elapsed="0.008831"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:27.973751" level="INFO">Current page contains text 'ใส่ให้มันครบ 8 ตัวสิ'.</msg>
+<arg>${RESULT_PASSWORD}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-29T16:23:27.973751" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:27.964920" elapsed="0.008831"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-29T16:23:27.973751" elapsed="2.096603"/>
+</kw>
+<doc>Test Password</doc>
+<status status="PASS" start="2024-03-29T16:23:26.386936" elapsed="3.683418"/>
+</test>
+<test id="s1-t4" name=" Check validation PhoneNum" line="45">
+<kw name="Open Google ReactForm">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:30.070354" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5174/'.</msg>
+<arg>http://localhost:5174/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-29T16:23:30.070354" elapsed="1.306429"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-29T16:23:31.376783" elapsed="0.113680"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:30.070354" elapsed="1.420109"/>
+</kw>
+<kw name="Input PhoneNum">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:31.492403" level="INFO">Typing text '02365' into text field 'name=mobile'.</msg>
+<arg>name=mobile</arg>
+<arg>${INPUT_PHONENUM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-29T16:23:31.491406" elapsed="0.093222"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:31.491406" elapsed="0.093222"/>
+</kw>
+<kw name="Click Element Field">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:31.585631" level="INFO">Clicking button 'name=lastnameTha'.</msg>
+<arg>name=lastnameTha</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-29T16:23:31.585631" elapsed="0.043748"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:31.584628" elapsed="0.044751"/>
+</kw>
+<kw name="Verify PhoneNum">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${RESULT_PHONENUM}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-29T16:23:31.630380" elapsed="0.010061"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:31.647492" level="INFO">Current page contains text 'ใส่เบอร์ให้ครบ 10 ตัวสิ'.</msg>
+<arg>${RESULT_PHONENUM}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-29T16:23:31.641444" elapsed="0.006048"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:31.629379" elapsed="0.018113"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-29T16:23:31.647492" elapsed="2.069622"/>
+</kw>
+<doc>Test Phonenum</doc>
+<status status="PASS" start="2024-03-29T16:23:30.070354" elapsed="3.647780"/>
+</test>
+<test id="s1-t5" name=" Check validation Email" line="53">
+<kw name="Open Google ReactForm">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:33.722177" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5174/'.</msg>
+<arg>http://localhost:5174/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-29T16:23:33.722177" elapsed="1.284591"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-29T16:23:35.006768" elapsed="0.114130"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:33.721120" elapsed="1.399778"/>
+</kw>
+<kw name="Input Email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:35.123144" level="INFO">Typing text 'jsfdgjh@gmail.com' into text field 'name=email'.</msg>
+<arg>name=email</arg>
+<arg>${INPUT_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-29T16:23:35.121842" elapsed="0.157231"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:35.121842" elapsed="0.157231"/>
+</kw>
+<kw name="Click Element Field">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:35.279073" level="INFO">Clicking button 'name=lastnameTha'.</msg>
+<arg>name=lastnameTha</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-29T16:23:35.279073" elapsed="0.038743"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:35.279073" elapsed="0.038743"/>
+</kw>
+<kw name="Verify Email">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${RESULT_EMAIL}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-29T16:23:35.318822" elapsed="0.010994"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-29T16:23:35.335809" level="INFO">Current page contains text 'Email must contain specific domain name'.</msg>
+<arg>${RESULT_EMAIL}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-29T16:23:35.329816" elapsed="0.005993"/>
+</kw>
+<status status="PASS" start="2024-03-29T16:23:35.318822" elapsed="0.016987"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-29T16:23:35.335809" elapsed="2.086160"/>
+</kw>
+<doc>Test email</doc>
+<status status="PASS" start="2024-03-29T16:23:33.720123" elapsed="3.703408"/>
+</test>
+<status status="PASS" start="2024-03-29T16:23:18.669051" elapsed="18.757202"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Reactform">Reactform</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
